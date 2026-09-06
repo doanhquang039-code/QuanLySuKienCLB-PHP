@@ -1,12 +1,12 @@
 POST: Array
 (
-    [title] => 28.5
+    [title] => doanh lương 2 triệu 1
     [club_id] => 10
-    [location] => 212
-    [start_time] => 2026-09-06 17:27:00
-    [end_time] => 2026-09-11 17:27:00
-    [capacity] => 10
-    [registration_deadline] => 2026-09-06 17:27:00
+    [location] => Hồ Tây
+    [start_time] => 2026-09-07 16:00:00
+    [end_time] => 2026-09-09 16:00:00
+    [capacity] => 15
+    [registration_deadline] => 2026-09-07 16:00:00
     [status] => open
 )
 
@@ -14,12 +14,12 @@ FILES: Array
 (
     [image] => Array
         (
-            [name] => Screenshot 2026-09-04 091435.png
-            [full_path] => Screenshot 2026-09-04 091435.png
+            [name] => Screenshot 2026-07-10 200224.png
+            [full_path] => Screenshot 2026-07-10 200224.png
             [type] => image/png
-            [tmp_name] => C:\xampp\tmp\php64CA.tmp
+            [tmp_name] => C:\xampp\tmp\php6142.tmp
             [error] => 0
-            [size] => 136408
+            [size] => 17192
         )
 
 )

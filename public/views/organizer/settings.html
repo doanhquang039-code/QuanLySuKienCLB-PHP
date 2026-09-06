@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Settings - ClubHub Admin</title>
+    <title>Settings - ClubHub Organizer</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -64,7 +64,7 @@
 </head>
 <body>
     <script src="/assets/js/api.js"></script>
-    <script>requireLogin(); requireRole("admin");</script>
+    <script>requireLogin(); requireRole("organizer");</script>
 
     <div class="sidebar">
         <div class="sidebar-brand">
@@ -73,18 +73,14 @@
         </div>
         <div class="sidebar-menu-title">Navigation</div>
         <div class="sidebar-menu">
-            <a href="/views/admin/dashboard.html">○ Dashboard</a>
-            <a href="/views/admin/clubs.html">◈ Clubs</a>
-            <a href="/views/admin/events.html">● Events</a>
-            <a href="/views/admin/registrations.html">◫ Registrations</a>
-            <a href="/views/admin/attendance.html">✓ Attendance</a>
-            <a href="/views/admin/notifications.html">⊙ Notifications</a>
-            <a href="/views/admin/audit.html">≡ Audit Log</a>
+            <a href="/views/organizer/dashboard.html">○ Dashboard</a>
+            <a href="/views/organizer/clubs.html">◈ Clubs</a>
+            <a href="/views/organizer/events.html">● Events</a>
+            <a href="/views/organizer/registrations.html">◫ Registrations</a>
+            <a href="/views/organizer/attendance.html">✓ Attendance</a>
             
             <div class="sidebar-menu-title" style="margin-top: 20px;">System</div>
-            <a href="/views/admin/users.html">👤 Users</a>
-            <a href="/views/admin/settings.html" class="active">⚙ Settings</a>
-            <a href="/views/admin/language.html">🌐 Language</a>
+            <a href="/views/organizer/settings.html" class="active">⚙ Settings</a>
         </div>
         <div class="sidebar-user" id="sidebarUser"></div>
     </div>
@@ -228,7 +224,7 @@
                 const initials = u.full_name.split(' ').map(n=>n[0]).join('').substring(0,2).toUpperCase();
                 document.getElementById('sidebarUser').innerHTML = `
                     <div class="avatar">${initials}</div>
-                    <div class="user-info">${u.full_name}<span>Quản trị viên</span></div>
+                    <div class="user-info">${u.full_name}<span>Quản lý</span></div>
                 `;
             }
 

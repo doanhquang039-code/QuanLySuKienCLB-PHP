@@ -298,8 +298,7 @@ function applyI18n() {
             }
         }
         if(u && u.role === 'organizer') {
-            document.querySelectorAll('.sidebar-menu a[href*="users.html"], .sidebar-menu a[href*="settings.html"], .sidebar-menu a[href*="language.html"]').forEach(e => e.style.display = 'none');
-            document.querySelectorAll('.sidebar-menu-title').forEach(e => { if(e.innerText === 'System') e.style.display = 'none'; });
+            document.querySelectorAll('.sidebar-menu a[href*="users.html"], .sidebar-menu a[href*="language.html"], .sidebar-menu a[href*="audit.html"]').forEach(e => e.style.display = 'none');
         }
     });
 
